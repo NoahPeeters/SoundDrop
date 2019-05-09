@@ -8,20 +8,85 @@
 
 /* Begin PBXBuildFile section */
 		40F66FDA2284597500C96126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66FD92284597500C96126 /* AppDelegate.swift */; };
-		40F66FDC2284597500C96126 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66FDB2284597500C96126 /* ViewController.swift */; };
-		40F66FDF2284597500C96126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F66FDD2284597500C96126 /* Main.storyboard */; };
 		40F66FE12284597600C96126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F66FE02284597600C96126 /* Assets.xcassets */; };
 		40F66FE42284597600C96126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F66FE22284597600C96126 /* LaunchScreen.storyboard */; };
+		40F66FFA22845B4B00C96126 /* SoundComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F66FF122845B4900C96126 /* SoundComm.framework */; };
+		40F6700122845B4B00C96126 /* SoundCommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F6700022845B4B00C96126 /* SoundCommTests.swift */; };
+		40F6700322845B4B00C96126 /* SoundComm.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F66FF322845B4A00C96126 /* SoundComm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40F6700622845B4B00C96126 /* SoundComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F66FF122845B4900C96126 /* SoundComm.framework */; };
+		40F6700722845B4B00C96126 /* SoundComm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40F66FF122845B4900C96126 /* SoundComm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40F9C9BB22845E59001089DA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9BA22845E59001089DA /* Nimble.framework */; };
+		40F9C9BD22845E6C001089DA /* Nimble.framework in Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9BA22845E59001089DA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40F9C9C122845ED6001089DA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9C022845ED6001089DA /* Quick.framework */; };
+		40F9C9C222845EDD001089DA /* Quick.framework in Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9C022845ED6001089DA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40F9C9C422845EEC001089DA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9C322845EEB001089DA /* SnapKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40F66FFB22845B4B00C96126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40F66FCE2284597500C96126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F66FF022845B4900C96126;
+			remoteInfo = SoundComm;
+		};
+		40F66FFD22845B4B00C96126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40F66FCE2284597500C96126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F66FD52284597500C96126;
+			remoteInfo = SoundDrop;
+		};
+		40F6700422845B4B00C96126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40F66FCE2284597500C96126 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40F66FF022845B4900C96126;
+			remoteInfo = SoundComm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40F6700B22845B4B00C96126 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40F6700722845B4B00C96126 /* SoundComm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F9C9BC22845E5B001089DA /* Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40F9C9C222845EDD001089DA /* Quick.framework in Carthage Frameworks */,
+				40F9C9BD22845E6C001089DA /* Nimble.framework in Carthage Frameworks */,
+			);
+			name = "Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40F66FD62284597500C96126 /* SoundDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F66FD92284597500C96126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40F66FDB2284597500C96126 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40F66FDE2284597500C96126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40F66FE02284597600C96126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F66FE32284597600C96126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40F66FE52284597600C96126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F66FF122845B4900C96126 /* SoundComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoundComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F66FF322845B4A00C96126 /* SoundComm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundComm.h; sourceTree = "<group>"; };
+		40F66FF422845B4A00C96126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F66FF922845B4B00C96126 /* SoundCommTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCommTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F6700022845B4B00C96126 /* SoundCommTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommTests.swift; sourceTree = "<group>"; };
+		40F6700222845B4B00C96126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F9C9BA22845E59001089DA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		40F9C9C022845ED6001089DA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		40F9C9C322845EEB001089DA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +94,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F9C9C422845EEC001089DA /* SnapKit.framework in Frameworks */,
+				40F6700622845B4B00C96126 /* SoundComm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F66FEE22845B4900C96126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F66FF622845B4B00C96126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F9C9C122845ED6001089DA /* Quick.framework in Frameworks */,
+				40F9C9BB22845E59001089DA /* Nimble.framework in Frameworks */,
+				40F66FFA22845B4B00C96126 /* SoundComm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				40F66FD82284597500C96126 /* SoundDrop */,
+				40F66FF222845B4A00C96126 /* SoundComm */,
+				40F66FFF22845B4B00C96126 /* SoundCommTests */,
+				40F9C9B922845E58001089DA /* Frameworks */,
 				40F66FD72284597500C96126 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				40F66FD62284597500C96126 /* SoundDrop.app */,
+				40F66FF122845B4900C96126 /* SoundComm.framework */,
+				40F66FF922845B4B00C96126 /* SoundCommTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,17 +143,78 @@
 		40F66FD82284597500C96126 /* SoundDrop */ = {
 			isa = PBXGroup;
 			children = (
-				40F66FD92284597500C96126 /* AppDelegate.swift */,
-				40F66FDB2284597500C96126 /* ViewController.swift */,
-				40F66FDD2284597500C96126 /* Main.storyboard */,
-				40F66FE02284597600C96126 /* Assets.xcassets */,
-				40F66FE22284597600C96126 /* LaunchScreen.storyboard */,
-				40F66FE52284597600C96126 /* Info.plist */,
+				40F9C9B722845D84001089DA /* Supporting Files */,
 			);
 			path = SoundDrop;
 			sourceTree = "<group>";
 		};
+		40F66FF222845B4A00C96126 /* SoundComm */ = {
+			isa = PBXGroup;
+			children = (
+				40F9C9BE22845E78001089DA /* Supporting Files */,
+			);
+			path = SoundComm;
+			sourceTree = "<group>";
+		};
+		40F66FFF22845B4B00C96126 /* SoundCommTests */ = {
+			isa = PBXGroup;
+			children = (
+				40F9C9BF22845E84001089DA /* Supporting Files */,
+			);
+			path = SoundCommTests;
+			sourceTree = "<group>";
+		};
+		40F9C9B722845D84001089DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F66FD92284597500C96126 /* AppDelegate.swift */,
+				40F66FE02284597600C96126 /* Assets.xcassets */,
+				40F66FE52284597600C96126 /* Info.plist */,
+				40F66FE22284597600C96126 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F9C9B922845E58001089DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40F9C9C322845EEB001089DA /* SnapKit.framework */,
+				40F9C9C022845ED6001089DA /* Quick.framework */,
+				40F9C9BA22845E59001089DA /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40F9C9BE22845E78001089DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F66FF322845B4A00C96126 /* SoundComm.h */,
+				40F66FF422845B4A00C96126 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F9C9BF22845E84001089DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F6700022845B4B00C96126 /* SoundCommTests.swift */,
+				40F6700222845B4B00C96126 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40F66FEC22845B4900C96126 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F6700322845B4B00C96126 /* SoundComm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		40F66FD52284597500C96126 /* SoundDrop */ = {
@@ -74,15 +224,57 @@
 				40F66FD22284597500C96126 /* Sources */,
 				40F66FD32284597500C96126 /* Frameworks */,
 				40F66FD42284597500C96126 /* Resources */,
+				40F6700B22845B4B00C96126 /* Embed Frameworks */,
+				40F66FEB228459A800C96126 /* Swiftlint */,
+				40F9C9B822845DEC001089DA /* Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40F6700522845B4B00C96126 /* PBXTargetDependency */,
 			);
 			name = SoundDrop;
 			productName = SoundDrop;
 			productReference = 40F66FD62284597500C96126 /* SoundDrop.app */;
 			productType = "com.apple.product-type.application";
+		};
+		40F66FF022845B4900C96126 /* SoundComm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40F6700822845B4B00C96126 /* Build configuration list for PBXNativeTarget "SoundComm" */;
+			buildPhases = (
+				40F66FEC22845B4900C96126 /* Headers */,
+				40F66FED22845B4900C96126 /* Sources */,
+				40F66FEE22845B4900C96126 /* Frameworks */,
+				40F66FEF22845B4900C96126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundComm;
+			productName = SoundComm;
+			productReference = 40F66FF122845B4900C96126 /* SoundComm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40F66FF822845B4B00C96126 /* SoundCommTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40F6700C22845B4B00C96126 /* Build configuration list for PBXNativeTarget "SoundCommTests" */;
+			buildPhases = (
+				40F66FF522845B4B00C96126 /* Sources */,
+				40F66FF622845B4B00C96126 /* Frameworks */,
+				40F66FF722845B4B00C96126 /* Resources */,
+				40F9C9BC22845E5B001089DA /* Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40F66FFC22845B4B00C96126 /* PBXTargetDependency */,
+				40F66FFE22845B4B00C96126 /* PBXTargetDependency */,
+			);
+			name = SoundCommTests;
+			productName = SoundCommTests;
+			productReference = 40F66FF922845B4B00C96126 /* SoundCommTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +288,13 @@
 				TargetAttributes = {
 					40F66FD52284597500C96126 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					40F66FF022845B4900C96126 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					40F66FF822845B4B00C96126 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 40F66FD52284597500C96126;
 					};
 				};
 			};
@@ -113,6 +312,8 @@
 			projectRoot = "";
 			targets = (
 				40F66FD52284597500C96126 /* SoundDrop */,
+				40F66FF022845B4900C96126 /* SoundComm */,
+				40F66FF822845B4B00C96126 /* SoundCommTests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,33 +325,110 @@
 			files = (
 				40F66FE42284597600C96126 /* LaunchScreen.storyboard in Resources */,
 				40F66FE12284597600C96126 /* Assets.xcassets in Resources */,
-				40F66FDF2284597500C96126 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F66FEF22845B4900C96126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F66FF722845B4B00C96126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40F66FEB228459A800C96126 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		40F9C9B822845DEC001089DA /* Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = "Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40F66FD22284597500C96126 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F66FDC2284597500C96126 /* ViewController.swift in Sources */,
 				40F66FDA2284597500C96126 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F66FED22845B4900C96126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F66FF522845B4B00C96126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F6700122845B4B00C96126 /* SoundCommTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		40F66FDD2284597500C96126 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40F66FDE2284597500C96126 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		40F66FFC22845B4B00C96126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F66FF022845B4900C96126 /* SoundComm */;
+			targetProxy = 40F66FFB22845B4B00C96126 /* PBXContainerItemProxy */;
 		};
+		40F66FFE22845B4B00C96126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F66FD52284597500C96126 /* SoundDrop */;
+			targetProxy = 40F66FFD22845B4B00C96126 /* PBXContainerItemProxy */;
+		};
+		40F6700522845B4B00C96126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40F66FF022845B4900C96126 /* SoundComm */;
+			targetProxy = 40F6700422845B4B00C96126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		40F66FE22284597600C96126 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,15 +560,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 52A793VRAY;
-				INFOPLIST_FILE = SoundDrop/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SoundDrop/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.SoundDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SoundDrop Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +583,128 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52A793VRAY;
-				INFOPLIST_FILE = SoundDrop/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SoundDrop/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.SoundDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40F6700922845B4B00C96126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SoundComm/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.SoundComm;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40F6700A22845B4B00C96126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SoundComm/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.SoundComm;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40F6700D22845B4B00C96126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52A793VRAY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "SoundCommTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.SoundCommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundDrop.app/SoundDrop";
+			};
+			name = Debug;
+		};
+		40F6700E22845B4B00C96126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52A793VRAY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "SoundCommTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.blechschmidt.SoundCommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundDrop.app/SoundDrop";
 			};
 			name = Release;
 		};
@@ -331,6 +725,24 @@
 			buildConfigurations = (
 				40F66FE92284597600C96126 /* Debug */,
 				40F66FEA2284597600C96126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40F6700822845B4B00C96126 /* Build configuration list for PBXNativeTarget "SoundComm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40F6700922845B4B00C96126 /* Debug */,
+				40F6700A22845B4B00C96126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40F6700C22845B4B00C96126 /* Build configuration list for PBXNativeTarget "SoundCommTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40F6700D22845B4B00C96126 /* Debug */,
+				40F6700E22845B4B00C96126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
