@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4025E8FC2284962000ADC7BF /* Byte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4025E8FB2284962000ADC7BF /* Byte.swift */; };
+		4025E8FE2284994000ADC7BF /* SoundCommChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4025E8FD2284994000ADC7BF /* SoundCommChannel.swift */; };
+		4025E90122849BA900ADC7BF /* ChannelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4025E90022849BA900ADC7BF /* ChannelSet.swift */; };
+		4025E9072284A9FC00ADC7BF /* TempiAudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4025E9052284A9FC00ADC7BF /* TempiAudioInput.swift */; };
+		4025E9082284A9FC00ADC7BF /* TempiFFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4025E9062284A9FC00ADC7BF /* TempiFFT.swift */; };
 		40F66FDA2284597500C96126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66FD92284597500C96126 /* AppDelegate.swift */; };
 		40F66FE12284597600C96126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F66FE02284597600C96126 /* Assets.xcassets */; };
 		40F66FE42284597600C96126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F66FE22284597600C96126 /* LaunchScreen.storyboard */; };
@@ -20,6 +25,15 @@
 		40F9C9C122845ED6001089DA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9C022845ED6001089DA /* Quick.framework */; };
 		40F9C9C222845EDD001089DA /* Quick.framework in Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9C022845ED6001089DA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40F9C9C422845EEC001089DA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F9C9C322845EEB001089DA /* SnapKit.framework */; };
+		40F9C9D222846379001089DA /* SoundCommSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9D122846379001089DA /* SoundCommSocket.swift */; };
+		40F9C9D4228463A2001089DA /* SoundCommTransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9D3228463A2001089DA /* SoundCommTransmitter.swift */; };
+		40F9C9D7228463DD001089DA /* SoundCommFMTransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9D6228463DD001089DA /* SoundCommFMTransmitter.swift */; };
+		40F9C9D922846404001089DA /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9D822846404001089DA /* Frequency.swift */; };
+		40F9C9DC2284655F001089DA /* SoundCommSocketTransmitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9DB2284655F001089DA /* SoundCommSocketTransmitError.swift */; };
+		40F9C9DE22846AFC001089DA /* SoundCommFMTransmitterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9DD22846AFC001089DA /* SoundCommFMTransmitterError.swift */; };
+		40F9C9E022846BEC001089DA /* Optional+valueOrThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9DF22846BEC001089DA /* Optional+valueOrThrow.swift */; };
+		40F9C9E2228485A5001089DA /* SoundCommTransmitterBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9E1228485A5001089DA /* SoundCommTransmitterBuffer.swift */; };
+		40F9C9E422849348001089DA /* SoundCommTransmitterBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9C9E322849348001089DA /* SoundCommTransmitterBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +87,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4025E8FB2284962000ADC7BF /* Byte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Byte.swift; sourceTree = "<group>"; };
+		4025E8FD2284994000ADC7BF /* SoundCommChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommChannel.swift; sourceTree = "<group>"; };
+		4025E90022849BA900ADC7BF /* ChannelSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSet.swift; sourceTree = "<group>"; };
+		4025E9052284A9FC00ADC7BF /* TempiAudioInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TempiAudioInput.swift; path = "../../../../../../../../../Downloads/tempi-fft-master/TempiFFT/TempiAudioInput.swift"; sourceTree = "<group>"; };
+		4025E9062284A9FC00ADC7BF /* TempiFFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TempiFFT.swift; path = "../../../../../../../../../Downloads/tempi-fft-master/TempiFFT/TempiFFT.swift"; sourceTree = "<group>"; };
 		40F66FD62284597500C96126 /* SoundDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F66FD92284597500C96126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F66FE02284597600C96126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +106,15 @@
 		40F9C9BA22845E59001089DA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		40F9C9C022845ED6001089DA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		40F9C9C322845EEB001089DA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		40F9C9D122846379001089DA /* SoundCommSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommSocket.swift; sourceTree = "<group>"; };
+		40F9C9D3228463A2001089DA /* SoundCommTransmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommTransmitter.swift; sourceTree = "<group>"; };
+		40F9C9D6228463DD001089DA /* SoundCommFMTransmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommFMTransmitter.swift; sourceTree = "<group>"; };
+		40F9C9D822846404001089DA /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		40F9C9DB2284655F001089DA /* SoundCommSocketTransmitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommSocketTransmitError.swift; sourceTree = "<group>"; };
+		40F9C9DD22846AFC001089DA /* SoundCommFMTransmitterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommFMTransmitterError.swift; sourceTree = "<group>"; };
+		40F9C9DF22846BEC001089DA /* Optional+valueOrThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+valueOrThrow.swift"; sourceTree = "<group>"; };
+		40F9C9E1228485A5001089DA /* SoundCommTransmitterBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommTransmitterBuffer.swift; sourceTree = "<group>"; };
+		40F9C9E322849348001089DA /* SoundCommTransmitterBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCommTransmitterBuffer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +147,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4025E8FF22849A3400ADC7BF /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				4025E8FD2284994000ADC7BF /* SoundCommChannel.swift */,
+				4025E90022849BA900ADC7BF /* ChannelSet.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		4025E9042284A9E700ADC7BF /* TempiFFT */ = {
+			isa = PBXGroup;
+			children = (
+				4025E9052284A9FC00ADC7BF /* TempiAudioInput.swift */,
+				4025E9062284A9FC00ADC7BF /* TempiFFT.swift */,
+			);
+			path = TempiFFT;
+			sourceTree = "<group>";
+		};
 		40F66FCD2284597500C96126 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				40F9C9BE22845E78001089DA /* Supporting Files */,
+				40F9C9D022846355001089DA /* Socket */,
+				4025E9042284A9E700ADC7BF /* TempiFFT */,
 			);
 			path = SoundComm;
 			sourceTree = "<group>";
@@ -159,6 +207,8 @@
 		40F66FFF22845B4B00C96126 /* SoundCommTests */ = {
 			isa = PBXGroup;
 			children = (
+				40F9C9E322849348001089DA /* SoundCommTransmitterBuffer.swift */,
+				40F6700022845B4B00C96126 /* SoundCommTests.swift */,
 				40F9C9BF22845E84001089DA /* Supporting Files */,
 			);
 			path = SoundCommTests;
@@ -190,6 +240,8 @@
 			children = (
 				40F66FF322845B4A00C96126 /* SoundComm.h */,
 				40F66FF422845B4A00C96126 /* Info.plist */,
+				40F9C9DF22846BEC001089DA /* Optional+valueOrThrow.swift */,
+				4025E8FB2284962000ADC7BF /* Byte.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,10 +249,32 @@
 		40F9C9BF22845E84001089DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				40F6700022845B4B00C96126 /* SoundCommTests.swift */,
 				40F6700222845B4B00C96126 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40F9C9D022846355001089DA /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				40F9C9D822846404001089DA /* Frequency.swift */,
+				40F9C9D122846379001089DA /* SoundCommSocket.swift */,
+				40F9C9DB2284655F001089DA /* SoundCommSocketTransmitError.swift */,
+				4025E8FF22849A3400ADC7BF /* Channel */,
+				40F9C9D5228463C8001089DA /* Transmitter */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		40F9C9D5228463C8001089DA /* Transmitter */ = {
+			isa = PBXGroup;
+			children = (
+				40F9C9D3228463A2001089DA /* SoundCommTransmitter.swift */,
+				40F9C9E1228485A5001089DA /* SoundCommTransmitterBuffer.swift */,
+				40F9C9D6228463DD001089DA /* SoundCommFMTransmitter.swift */,
+				40F9C9DD22846AFC001089DA /* SoundCommFMTransmitterError.swift */,
+			);
+			path = Transmitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +365,7 @@
 					};
 					40F66FF022845B4900C96126 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					40F66FF822845B4B00C96126 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -397,6 +472,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4025E9082284A9FC00ADC7BF /* TempiFFT.swift in Sources */,
+				4025E8FC2284962000ADC7BF /* Byte.swift in Sources */,
+				4025E8FE2284994000ADC7BF /* SoundCommChannel.swift in Sources */,
+				40F9C9E022846BEC001089DA /* Optional+valueOrThrow.swift in Sources */,
+				40F9C9D222846379001089DA /* SoundCommSocket.swift in Sources */,
+				40F9C9DE22846AFC001089DA /* SoundCommFMTransmitterError.swift in Sources */,
+				40F9C9D922846404001089DA /* Frequency.swift in Sources */,
+				40F9C9E2228485A5001089DA /* SoundCommTransmitterBuffer.swift in Sources */,
+				40F9C9D7228463DD001089DA /* SoundCommFMTransmitter.swift in Sources */,
+				40F9C9D4228463A2001089DA /* SoundCommTransmitter.swift in Sources */,
+				4025E9072284A9FC00ADC7BF /* TempiAudioInput.swift in Sources */,
+				4025E90122849BA900ADC7BF /* ChannelSet.swift in Sources */,
+				40F9C9DC2284655F001089DA /* SoundCommSocketTransmitError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F9C9E422849348001089DA /* SoundCommTransmitterBuffer.swift in Sources */,
 				40F6700122845B4B00C96126 /* SoundCommTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +648,7 @@
 		40F66FE92284597600C96126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 52A793VRAY;
@@ -582,6 +672,7 @@
 		40F66FEA2284597600C96126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -605,6 +696,7 @@
 		40F6700922845B4B00C96126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -624,6 +716,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -634,6 +727,7 @@
 		40F6700A22845B4B00C96126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

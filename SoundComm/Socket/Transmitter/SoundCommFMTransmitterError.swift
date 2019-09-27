@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+public enum SoundCommFMTransmitterError: Error {
+    case cannotCreateAudioBuffer
+    case cannotCreateAudioFormat
+}

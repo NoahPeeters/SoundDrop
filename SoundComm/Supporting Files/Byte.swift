@@ -1,5 +1,5 @@
 //
-//  SoundCommSocketTransmitError.swift
+//  Byte.swift
 //  SoundComm
 //
 //  Created by Noah Peeters on 09.05.19.
@@ -8,5 +8,4 @@
 
 import Foundation
 
-public enum SoundCommSocketTransmitError: Error {
-}
+public typealias Byte = UInt8

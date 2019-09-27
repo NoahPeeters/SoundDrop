@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol SoundCommTransmitter {
-    
+    func startTransmitting()
 }
